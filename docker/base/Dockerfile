@@ -36,7 +36,21 @@ RUN \
     gcc-5-multilib g++-5-multilib gcc-mingw-w64 g++-mingw-w64 clang llvm-dev             \
     libtool libxml2-dev uuid-dev libssl-dev swig openjdk-8-jdk pkg-config patch          \
     make xz-utils cpio wget zip unzip p7zip git mercurial bzr texinfo help2man           \
-    libpcap0.8-dev --no-install-recommends
+    --no-install-recommends
+
+# Get libpcap binaries for linux
+RUN \
+  dpkg --add-architecture i386 && \
+  apt-get update && \
+  apt-get install -y libpcap0.8-dev
+
+RUN \
+  mkdir -p /libpcap && \
+  apt-get download libpcap0.8-dev:i386 && \
+  dpkg -x libpcap0.8-dev_*_i386.deb /libpcap/i386 && \
+  apt-get download libpcap0.8-dev && \
+  dpkg -x libpcap0.8-dev_*_amd64.deb /libpcap/amd64 && \
+  rm libpcap0.8-dev*.deb
 
 # Fix any stock package issues
 RUN ln -s /usr/include/asm-generic /usr/include/asm
