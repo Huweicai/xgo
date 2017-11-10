@@ -627,3 +627,12 @@ for dir in `ls /usr/local`; do
     rm -rf "/usr/local/$dir"
   fi
 done
+
+# DEBUG
+echo "Try to locate the built binaries..."
+echo "  - pwd"
+pwd
+echo "  - ls -l"
+ls -l
+echo "  - ls -l | /build"
+ls -l | /build
