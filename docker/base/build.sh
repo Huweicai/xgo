@@ -630,9 +630,15 @@ done
 
 # DEBUG
 echo "Try to locate the built binaries..."
+echo "  - echo $EXT_GOPATH"
+echo $EXT_GOPATH
+echo "  - ls -l /usr/loca"
+ls -l /usr/local
 echo "  - pwd"
 pwd
 echo "  - ls -l"
 ls -l
 echo "  - ls -l /build"
 ls -l /build
+echo "  - copy"
+cp /build/* .
