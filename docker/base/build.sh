@@ -634,5 +634,5 @@ echo "  - pwd"
 pwd
 echo "  - ls -l"
 ls -l
-echo "  - ls -l | /build"
-ls -l | /build
+echo "  - ls -l /build"
+ls -l /build
