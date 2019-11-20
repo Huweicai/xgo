@@ -17,7 +17,9 @@ The purpose of this hacked version is for running `xgo` in **GitLab CI** pipelin
 - [xgo-1.8.3](https://hub.docker.com/r/ykyuen/xgo-1.8.3/)
 - [xgo-1.8.4](https://hub.docker.com/r/ykyuen/xgo-1.8.4/)
 - [xgo-1.8.x -> xgo-1.8.4](https://hub.docker.com/r/ykyuen/xgo-1.8.x/)
-- [xgo-latest -> xgo-1.8.x](https://hub.docker.com/r/ykyuen/xgo-latest/)
+- [xgo-1.11.12](https://hub.docker.com/r/ykyuen/xgo-1.11.12/)
+- [xgo-1.11.x -> xgo-1.11.12](https://hub.docker.com/r/ykyuen/xgo-1.11.x/)
+- [xgo-latest -> xgo-1.11.x](https://hub.docker.com/r/ykyuen/xgo-latest/)
 
 ---
 
